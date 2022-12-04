@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 const api = axios.create({
-    baseURL: 'https://mern-stack-app-api.onrender.com',
+    baseURL: 'https://mern-stack-app-api.onrender.com/api',
 })
 
 export const insertEmployee = payload => api.post(`/employees`, payload)
